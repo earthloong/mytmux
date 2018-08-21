@@ -41,7 +41,7 @@
 
 所有窗口的名称显示在底部状态栏上，如下图所示。 有了上面的配置，只要点击窗口名就可以切换到指定窗口了 （快捷键是 C-b n, C-b p, C-b 1 .. C-b 9）
 
-
+![avatar](https://images0.cnblogs.com/blog2015/163248/201506/122313300049787.png)
 (图盗自这里: Increased Developer Productivity with Tmux, Part 2: ~/.tmux.conf)
 什么是pane?
 
