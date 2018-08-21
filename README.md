@@ -1,6 +1,5 @@
 # mytmux
 
-
     安装简单：sudo apt-get install tmux
     使用只需记住几个常用快捷键。
     tmux所有自带命令都默认需要先按Ctrb+b，然后再键入对应的命令。
