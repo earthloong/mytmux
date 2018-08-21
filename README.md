@@ -49,7 +49,7 @@
 
 还有一种切换方法是 C-b q，tmux会显示每个pane的序号，按这个序号就可以跳过去了（按慢了可不行，得在数字消失前按）。
 
-
+![avatar](https://images0.cnblogs.com/blog2015/163248/201506/122323275041915.png)
 (本图片盗自: http://www.slideshare.net/lgfang/tmux/14 )
 
 开启了 mouse-select-pane 选项之后， 就可以用鼠标点击面板切换了
