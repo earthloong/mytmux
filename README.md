@@ -35,3 +35,36 @@
 
     C-b ,　给当前窗口改名
 
+什么是window?
+
+就是用 C-b c 创建出来的窗口，每个window跟tmux所在的终端一样大，window里面可以容纳多个pane。
+
+所有窗口的名称显示在底部状态栏上，如下图所示。 有了上面的配置，只要点击窗口名就可以切换到指定窗口了 （快捷键是 C-b n, C-b p, C-b 1 .. C-b 9）
+
+
+(图盗自这里: Increased Developer Productivity with Tmux, Part 2: ~/.tmux.conf)
+什么是pane?
+
+就是窗口里面的分屏，可以用 C-b o 来切换到下一个pane，或者用 C-b Up 切换到当前pane上方的pane, 用C-b Down切换到当前pane下方的pane.
+
+还有一种切换方法是 C-b q，tmux会显示每个pane的序号，按这个序号就可以跳过去了（按慢了可不行，得在数字消失前按）。
+
+
+(本图片盗自: http://www.slideshare.net/lgfang/tmux/14 )
+
+开启了 mouse-select-pane 选项之后， 就可以用鼠标点击面板切换了
+用鼠标改变pane的大小
+
+其实前面切换window或者pane，用鼠标并没有太大优势，也就只能略微减轻一点记忆负担。 但用鼠标拖动改变pane的大小这条是比快捷键有优势的，因为用快捷键很难一次调节到位 ，比如是增加6行还是9行？ 缩小20列还是40列？而且 还可以斜向拖住交叉点来同时改变多个窗口的大小
+附送一条贴士: 最大化/还原pane
+
+    如果你用的是tmux >= 1.8，那么可以用 C-b z 来最大化一个pane，想恢复的时候再次按 C-b z 就是了
+    如果你用的是tmux < 1.8，那么有点复杂，自己看这里: “Maximizing” a pane in tmux
+
+参考
+
+推荐下面两个slides，讲得都很通俗易懂。不过slideshare被蔷了，各位自己想办法吧
+
+    http://www.slideshare.net/lgfang/tmux (搜了一下，在蔷内找到一个老点的版本: tmux - A Great Terminal Multiplexer)
+    http://www.slideshare.net/chenkaie/tmux-rocks
+
